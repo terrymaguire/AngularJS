@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Promises</title>
+</head>
+<body ng-app="app">
+
+    <div ng-controller="SampleCtrl">
+        <div style="border: solid 1px black;">
+            <button ng-click="test()">Click Me</button><br />
+            <input type="checkbox" ng-model="fail" />Fail
+        </div>
+
+        <div style="border: solid 1px black;">
+            <button ng-click="test2()">Click Me 2</button><br />
+            <input type="checkbox" ng-model="fail2" />Fail<br />
+            Status: {{status2}}
+        </div>
+
+    </div>
+
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/app/step11.js"></script>
+</body>
+</html>

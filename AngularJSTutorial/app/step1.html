@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Hello AngularJS</title>
+    <link href="../Content/app.css" rel="stylesheet" />
+</head>
+<body id="ng-app" ng-app="myApp">
+    <h1>Hello AngularJS</h1>
+
+    <div ng-controller="FirstCtrl" class="scope">
+        <input type="text" ng-model="model.firstName" />
+        <div>{{model.firstName}}</div>
+        <button ng-click="clickMe(model.firstName);">Click Me</button>
+    </div>
+
+    <div ng-controller="FirstCtrl" class="scope">
+        <input type="text" ng-model="model.firstName" />
+        <div>{{model.firstName}}</div>
+        <button ng-click="clickMe(model.firstName);">Click Me</button>
+    </div>
+
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/app/app.js"></script>
+</body>
+</html>
